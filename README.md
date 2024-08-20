@@ -1,4 +1,4 @@
-# jrmpc
+# JRMPC
 3D Point Cloud Alignment - ports MATLAB code of JRMPC [inria.fr](https://team.inria.fr/perception/research/jrmpc/) from
 
 ```
@@ -14,13 +14,15 @@ IEEE Transactions on Pattern Analysis and Machine Intelligence, 2018,
 40 (6), pp.1397 - 1410. ⟨10.1109/TPAMI.2017.2717829⟩. ⟨hal-01413414⟩
 ```
 
-<iframe width="427" height="250" src="https://www.youtube.com/embed/aWLD4QXCKI0" title="Joint registration of Armadillo views (JRMPC algorithm)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## MATLAB
 
 Two demos are also provided that use the above algorithm to jointly register multiple views.
 
-### Artificial Bunny
+### Artificial Point Cloud
+
+
+
 
 ```
 demoJrmpSynthetic.m
@@ -52,13 +54,23 @@ still cameras calibrated with the TOF. Note that color information is not used f
 while it is not very accurate close to occlusions. We suggest using color information
 only for visualization.
 
+# Videos
+
+
+[![Armadillo](tofData/armadillo.png)](https://www.youtube.com/watch?v=aWLD4QXCKI0)
+
+
+[![tof](tofData/tof.png)](https://www.youtube.com/watch?v=arSEZaZMJ80)
+
+
+
 ### Notes
 
+```
 The function removePointsAndFlatCenters is a helper function used by the above demos
 It takes the output of JRMPC and tries to "detect" outliers in X and V, as described in the
 paper.
 
-```
 For documentation on removePointsAndFlatCenters type in the matlab console:
 
     >> help removePointsAndFlatCenters
@@ -70,9 +82,6 @@ For documentation on jrmpc, type in matlab console:
 or simply call it with no arguments:
 
     >> jrmpc()
-```    
-
-
 Note that:
 
 1) Sometimes, we initialize the cluster centers with random points (points on a sphere surface) 
@@ -95,3 +104,4 @@ Most likely, a reasonable subsampling does not affect the accuracy of rotations/
 4) The visualisation of the registered sets in case of TOF data is very difficult and slow in Matlab. 
 We strongly recommend to use the provided function mat2off.m and save the 
 registered point set to OFF files. Then use an compatible software to display the OFF file.
+```

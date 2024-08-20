@@ -1,8 +1,5 @@
 # jrmpc
-3D Point Cloud Alignment
-
-
-This software ports the matlab code of the JRMPC algorithm from [inria.fr](https://team.inria.fr/perception/research/jrmpc/) from
+3D Point Cloud Alignment - ports MATLAB code of JRMPC [inria.fr](https://team.inria.fr/perception/research/jrmpc/) from
 
 ```
 Georgios Evangelidis, Dionyssos Kounades-Bastian, Radu Horaud, Emmanouil Psarakis. 
@@ -16,6 +13,8 @@ Georgios Evangelidis, Radu Horaud.
 IEEE Transactions on Pattern Analysis and Machine Intelligence, 2018, 
 40 (6), pp.1397 - 1410. ⟨10.1109/TPAMI.2017.2717829⟩. ⟨hal-01413414⟩
 ```
+
+<iframe width="427" height="250" src="https://www.youtube.com/embed/aWLD4QXCKI0" title="Joint registration of Armadillo views (JRMPC algorithm)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## MATLAB
 
